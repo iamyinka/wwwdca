@@ -146,14 +146,10 @@
     }
       
     .section-padding {
-      padding-top: 80px;
+      padding-top: 15vh;
       padding-bottom: 80px;
     }
   
-    .custom-btn {
-      font-size: var(--copyright-text-font-size);
-      padding: 8px 16px;
-    }
   }
   
   @media screen and (max-width: 580px) {
@@ -163,10 +159,6 @@
   
     h2 {
       font-size: 32px;
-    }
-  
-    .paddingText {
-      padding: 25px;
     }
   
   }
