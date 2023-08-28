@@ -25,64 +25,45 @@
     </head>
     
     <body>
-
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../media/dcasvg-logo.svg" alt="" width="90" height="90">
+              </a>
+            </div>
+          </nav>
         <main>            
-
 <!--CONTACT-->
-            <section class="section-padding">
-                <div class="container">
-                    <div class="row contact-us-sec">
-
-                        <div class="col-lg-8 col-md-10 col-12 mx-auto">
-                            <h2 class="mb-4 text-center">Make Inquiry</h2>
-                           
+        <section class="section-padding">
+            <div class="container">
+                <div class="row contact-us-sec">
+                    <div class="col-lg-8 col-md-10 col-12 mx-auto">
+                        <h2 class="mb-4 text-center">Make Inquiry</h2>                     
                             <form class="custom-form" role="form" action="" method="POST">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12 my-2">
                                         <label class="mb-2" for="name">Full Name</label>
-
                                         <input type="text" name="name" id="name" class="form-control" required="">
                                     </div>
-
                                     <div class="col-lg-6 col-md-6 col-12 my-2">
                                         <label class="mb-2" for="email">Email Address</label>
-                                        
                                         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" required="">
                                     </div>
                                     <div class="col-lg-12 col-md-6 col-12 my-2">
-                                        <label class="mb-2" for="phone">Phone Number</label>
-                                        
+                                        <label class="mb-2" for="phone">Phone Number</label>                                 
                                         <input type="number" name="phone" id="phone" class="form-control" required="">
                                     </div>
-<!--
-                                    <div class="col-lg-4 col-md-6 col-12 my-2">
-                                        <label class="mb-2" for="subject">How did you know about us?</label>
-
-                                        <select class="form-select form-control" name="subject" id="subject">
-                                            <option selected="">Choose a subject</option>
-                                            <option value="web+search">Website Searches</option>
-                                            <option value="social+media">Social Media</option>
-                                            <option value="others">Others</option>
-                                        </select>
-                                    </div>
--->
                                     <div class="col-12 my-2">
                                         <label class="mb-2" for="message">Tell us about your needs</label>
-
                                         <textarea class="form-control" rows="5" id="message" name="message" required=""></textarea>
-                                    
                                         <button type="submit" class="form-control mt-4" id="submit">Submit</button>
                                     </div>
-
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
             </section>
-
         </main>
-        
     </body>
 </html>
