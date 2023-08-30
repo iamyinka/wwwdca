@@ -184,6 +184,26 @@ hr {
 
 /* Free Taster Form */
 
+.freeTasterForm input[type="text"],
+.freeTasterForm input[type="email"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.freeTasterForm input::placeholder {
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.freeTasterForm input[type="text"]:focus,
+.freeTasterForm input[type="email"]:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .freeTasterForm .form-select {
   outline: none;
   border: none;
