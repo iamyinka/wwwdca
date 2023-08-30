@@ -1,0 +1,37 @@
+body{
+    font-family: convergence;
+    width: 100%;
+}
+
+#head {
+    font-size: 25px;
+    color: #ffffff;
+    background:url(a.jpg);
+    padding: 100px;
+    padding: 15% 25% 15% 25%;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+  }
+
+.sec1 {
+    background-image: linear-gradient(to bottom, rgb(195, 214, 238) , rgb(255, 255, 255));
+    padding: 50px;
+    grid-column: auto;
+}
+.box1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20%;
+    
+}
+.imag {
+    position: relative;
+    top: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 45%;
+  }
