@@ -59,6 +59,26 @@ hr {
   background-attachment: fixed;
 }
 
+/*contact us*/
+
+
+.contact-hero {
+  width: 100vw;
+  height: 60vh;
+  /* background: url("../../assets/images/faqbg.png"); */
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1616593437252-0631aeb95590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-attachment: fixed;
+}
+
+
+.contacting a{
+  text-decoration: none;
+}
+
+
 /* Courses */
 
 .courses-hero {
