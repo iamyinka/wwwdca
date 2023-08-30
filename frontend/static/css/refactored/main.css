@@ -72,8 +72,6 @@ hr {
 }
 
 .courseIntro {
-  /* clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%); */
-  /* background-color: teal; */
   min-height: 50vh;
 }
 
@@ -206,6 +204,10 @@ hr {
 /* Media Queries */
 
 @media (max-width: 620px) {
+  .courses-hero,
+  .faq-hero {
+    background-attachment: scroll;
+  }
   .footer__social {
     flex-direction: column;
     justify-content: center;
