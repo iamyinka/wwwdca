@@ -46,6 +46,17 @@ hr {
   opacity: 1;
 }
 
+.btn-custom {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.btn-custom:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
 /* FAQs */
 
 .faq-hero {
@@ -159,16 +170,75 @@ hr {
   padding: 0.85rem;
 }
 
-.btn-custom {
-  background-color: var(--primary-color);
-  color: #fff;
-  transition: all 0.3s ease-in;
+/* Enrolment Form */
+
+.enrol-header {
+  width: 100vw;
+  height: 60vh;
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-attachment: fixed;
 }
 
-.btn-custom:hover {
-  background-color: #fff;
-  color: var(--primary-color);
+.enrolmentForm input[type="text"],
+.enrolmentForm input[type="email"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
 }
+
+.enrolmentForm input::placeholder {
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.enrolmentForm input[type="text"]:focus,
+.enrolmentForm input[type="email"]:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Free Taster Form */
+
+.freeTasterForm input[type="text"],
+.freeTasterForm input[type="email"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.freeTasterForm input::placeholder {
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.freeTasterForm input[type="text"]:focus,
+.freeTasterForm input[type="email"]:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.freeTasterForm .form-select {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.freeTasterForm .form-select:focus {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* End Free Taster Form */
 
 /* Footer */
 
@@ -225,7 +295,8 @@ hr {
 
 @media (max-width: 620px) {
   .courses-hero,
-  .faq-hero {
+  .faq-hero,
+  .enrol-header {
     background-attachment: scroll;
   }
   .footer__social {
