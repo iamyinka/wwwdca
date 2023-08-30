@@ -1,0 +1,177 @@
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --white-color:                  #FFFFFF;
+    --primary-color:                #38b083;
+    --section-bg-color:             #f5f5f5;
+    --border-color:                 #dee2e6;
+    --dark-color:                   #000000;
+    --grey-color:                   #fcfeff;
+    --title-color:                  #565758;
+    --p-color:                      #717275;
+    --footer-bg-color:              #002627;
+  
+    --body-font-family:             'Open Sans', sans-serif;
+  
+    --border-radius-large:          100px;
+    --border-radius-medium:         20px;
+    --border-radius-small:          10px;
+  
+  
+    --h1-font-size:                 68px;
+    --h2-font-size:                 42px;
+    --h3-font-size:                 36px;
+    --h4-font-size:                 32px;
+    --h5-font-size:                 24px;
+    --h6-font-size:                 22px;
+    --p-font-size:                  18px;
+    --menu-font-size:               18px;
+    --copyright-text-font-size:     16px;
+    --custom-link-font-size:        14px;
+  
+    --font-weight-light:            300;
+    --font-weight-normal:           400;
+    --font-weight-bold:             600;
+  }
+  
+  body {
+      background: var(--white-color);
+      font-family: var(--body-font-family); 
+  }
+  
+  
+  p {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-light);
+  }
+  
+  a, 
+  button {
+    touch-action: manipulation;
+    transition: all 0.3s;
+  }
+  
+  a {
+    color: var(--p-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--primary-color);
+  }
+  
+  ::selection {
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  ::-moz-selection {
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  .section-padding {
+    padding-top: 20vh;
+    padding-bottom: 100px;
+  }
+  
+  
+  .paddingText {
+    padding: 50px;
+  }
+  
+
+
+  .enrol-header {
+    width: 100vw;
+    height: 50vh;
+    background: url("../assets/images/faqbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-attachment: fixed;
+  }
+  
+  
+  /*---------------------------------------
+    CUSTOM FORM               
+  -----------------------------------------*/
+  .custom-form .form-control {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  
+  .custom-form label {
+    color: var(--p-color);
+    font-weight: var(--font-weight-normal);
+  }
+  
+  .custom-form button[type="submit"] {
+    background: linear-gradient(90deg, #0669BC 25.47%, #138DDB 68.59%, #3F9BEE 92.66%);
+    border: 0;
+    color: var(--white-color);
+    font-weight: var(--font-weight-bold);
+    transition: all 0.3s;
+  }
+  
+  .custom-form button[type="submit"]:hover,
+  .custom-form button[type="submit"]:focus {
+    background: linear-gradient(90deg, #0669BC 55.47%, #138DDB 78.59%, #3F9BEE 99.99%);
+    color: var(--white-color);
+  }
+  
+  
+  
+  /*---------------------------------------
+    RESPONSIVE STYLES               
+  -----------------------------------------*/
+  @media screen and (max-width: 991px) {
+    body {
+      padding-top: 80px;
+    }
+  
+    h1 {
+      font-size: 48px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    h3 {
+      font-size: 32px;
+    }
+  
+    h4 {
+      font-size: 28px;
+    }
+  
+    h5 {
+      font-size: 20px;
+    }
+  
+    h6 {
+      font-size: 18px;
+    }
+      
+    .section-padding {
+      padding-top: 15vh;
+      padding-bottom: 80px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 580px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+  }
+  
+  
