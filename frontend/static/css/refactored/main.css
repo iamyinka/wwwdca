@@ -1,0 +1,125 @@
+/* General Styles */
+:root {
+  --primary-color: rgb(46, 102, 153);
+  --secondary-color: rgb(53, 158, 214);
+  --secondary-color-lvl2: #fff;
+  --secondary-color-lvl3: #000;
+  --title-font-family: "Lora", serif;
+  --primary-font-family: "Signika Negative", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  background: linear-gradient(215deg, #010926 60%, rgba(218, 232, 235, 1) 73%);
+}
+.navbar-brand img {
+  width: 100%;
+  max-width: 120px;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--primary-font-family);
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+hr {
+  color: #fff;
+  opacity: 1;
+}
+
+/* FAQs */
+
+.faq-hero {
+  width: 100vw;
+  height: 50vh;
+  background: url("../../assets/images/faqbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-attachment: fixed;
+}
+
+/* Footer */
+
+.footer {
+  background: linear-gradient(215deg, #010926 60%, rgba(218, 232, 235, 1) 93%);
+  color: #fff;
+}
+
+.footer__social--logo img {
+  width: 100%;
+  max-width: 120px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__social--icons {
+  display: flex;
+  gap: 0.85em;
+}
+
+.footer__social--icons a {
+  transition: all 0.3s ease-in;
+}
+
+.footer__social--icons a:hover {
+  opacity: 0.85;
+  transform: scale(1.2);
+}
+
+.footer__social--icons img {
+  width: 100%;
+  max-width: 30px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  /* background-color: teal; */
+  text-align: justify;
+}
+
+/* Media Queries */
+
+@media (max-width: 620px) {
+  .footer__social {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2em;
+  }
+
+  .footer {
+    background: linear-gradient(215deg, #010926 93%, rgba(218, 232, 235, 1) 13%);
+    color: #fff;
+  }
+}
