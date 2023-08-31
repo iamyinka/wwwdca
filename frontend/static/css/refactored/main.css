@@ -14,9 +14,53 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--primary-font-family);
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+h4 {
+  font-size: 2.5rem;
+}
+
+p,
+.nav-link,
+.nav-link .btn-info,
+input,
+select {
+  font-size: 1.8rem;
+}
+
+a,
+li,
+span,
+form label,
+form input,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+.form-control,
+.accordion-button {
+  font-size: 1.6rem;
+}
+
+address {
+  font-size: 1.5rem;
 }
 
 img {
@@ -50,6 +94,7 @@ hr {
   background-color: var(--primary-color);
   color: #fff;
   transition: all 0.3s ease-in;
+  font-size: 1.5rem;
 }
 
 .btn-custom:hover {
@@ -70,6 +115,23 @@ hr {
   background-attachment: fixed;
 }
 
+/*contact us*/
+
+.contact-hero {
+  width: 100vw;
+  height: 60vh;
+  /* background: url("../../assets/images/faqbg.png"); */
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1616593437252-0631aeb95590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-attachment: fixed;
+}
+
+.contacting a {
+  text-decoration: none;
+}
+
 /* Courses */
 
 .courses-hero {
@@ -87,7 +149,7 @@ hr {
 }
 
 .courseIntro__desc p {
-  font-size: 1.5em;
+  font-size: 2rem;
   line-height: 1.8em;
 }
 
@@ -220,6 +282,76 @@ hr {
 
 /* End Free Taster Form */
 
+/* Contact Us */
+.contact-hero {
+  width: 100vw;
+  height: 60vh;
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1473797874090-4f768ae28470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-attachment: fixed;
+}
+
+.contactInfo__method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.contactInfo__method .icon {
+  font-size: 2.5rem;
+}
+
+.contactForm textarea {
+  max-height: 20rem;
+  resize: none;
+}
+
+.contactForm button img {
+  width: 100%;
+  max-width: 25px;
+}
+
+/* End Contact Us */
+
+/* Work Experience Program (wpe) */
+
+.wpe-hero {
+  width: 100vw;
+  height: 60vh;
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 5% 95%;
+  background-attachment: fixed;
+}
+
+.get-experience {
+  background: linear-gradient(to bottom, rgb(0, 204, 255), rgb(255, 255, 255));
+}
+
+.program-desc li {
+  list-style-type: none;
+  line-height: 3rem;
+  display: flex;
+  gap: 0.85rem;
+  transition: all 0.3s ease-in;
+  /* font-size: 1.8rem; */
+}
+
+.program-desc li::before {
+  content: "\2713";
+  color: var(--secondary-color);
+}
+
+.program-desc li:hover {
+  transform: translateX(1.2rem);
+  color: var(--primary-color);
+}
+
 /* Footer */
 
 .footer {
@@ -261,6 +393,7 @@ hr {
 .footer a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .footer__links {
@@ -276,7 +409,8 @@ hr {
 @media (max-width: 620px) {
   .courses-hero,
   .faq-hero,
-  .enrol-header {
+  .enrol-header,
+  .contact-hero {
     background-attachment: scroll;
   }
   .footer__social {
