@@ -1,0 +1,315 @@
+
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --white-color:                  #ffffff;
+    --primary-color:                #5d52ba;
+    --secondary-color:              #0dcaf0;
+    --section-bg-color:             #f0f8ff;
+    --custom-btn-bg-color:          #f65129;
+    --social-icon-link-bg-color:    #7f73eb;
+    --dark-color:                   #000000;
+    --p-color:                      #717275;
+    --border-color:                 #e9eaeb;
+  
+  
+    --border-radius-large:          100px;
+    --border-radius-medium:         30px;
+    --border-radius-small:          10px;
+  
+  }
+  
+  
+  
+  
+  /*---------------------------------------
+    SECTION               
+  -----------------------------------------*/
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .section-bg {
+    background: var(--section-bg-color);
+  }
+
+
+    
+.connect_me {
+  display: inline-flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  right: 0px;
+  top: 200px;
+  transition: all 0.3s linear;
+}
+.connect_me:hover {
+  right: 0px !important;
+}
+.connect_me a {
+  transition: opacity 0.4s;
+  text-decoration: none;
+  padding: 5px 50px 5px 10px;
+  border-radius: 8px;
+}
+.connect_me a:hover {
+  opacity: 0.67;
+}
+.connect_me a .fa-brands {
+  position: relative;
+  top: 5px;
+}
+.connect_me a span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.connect_me .enquiry {
+  background: #ed7029;
+}
+.connect_me .telegram {
+  background: #229ed9;
+}
+.connect_me .whatsapp {
+  background: #075e54;
+}
+.connect_me .message {
+  background: #0431a5;
+}
+
+
+  
+
+/* COURSE */
+
+.courses {
+    width: 100vw;
+    position: relative;
+    top: -10px;
+    padding-top: 100px;
+    background: linear-gradient(180deg, #b9defe 0%, rgba(207, 207, 227, 0) 25%);
+  }
+  .courses h2 {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 87px;
+    color: #252525;
+    letter-spacing: -1.5px;
+  }
+  .courses main {
+    display: grid;
+    padding: 92px 6.4vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+  }
+  .courses main article {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .courses main article .detail {
+    position: relative;
+    margin-right: 2vw;
+    width: 100%;
+  
+    pointer-events: none;
+  }
+  .courses main article .detail img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 1;
+    height: 500px;
+    border-radius: 10px;
+  }
+  .courses main article .detail span {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(
+      180deg,
+      rgba(37, 37, 37, 0) 1.04%,
+      rgba(37, 37, 37, 0.8) 96.88%
+    );
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 80px;
+    padding-left: 1.1vw;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .courses main article .detail #data_a {
+    padding-top: 120px;
+  }
+  .courses main article .swipe_up {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    height: 0;
+    bottom: -80px;
+    background: #e5edf4;
+    padding: 10px 1.5vw;
+    width: 100%;
+    overflow-y: scroll;
+    transition: all 0.3s linear;
+  }
+  .courses main article .swipe_up h4 {
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.15px;
+  }
+  .courses main article .swipe_up p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  .courses main article .swipe_up a {
+    display: block;
+    text-align: center;
+    padding: 16px 0px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background: var(
+      --gradient-fot-cta,
+      linear-gradient(90deg, #0082f0 17.19%, #199ef3 65.1%, #6fb6f6 97.4%)
+    );
+    width: inherit;
+    transition: opacity 0.4s;
+  }
+  .courses main article .swipe_up a:hover {
+    opacity: 0.67;
+  }
+  .courses main article .swipe_up::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+  }
+  .courses main article:hover .swipe_up {
+    bottom: 0px;
+    height: 80vh;
+  }
+  
+   
+  /*WHY US*/
+  
+  
+.why-us {
+    background: linear-gradient(180deg, rgba(185, 222, 254, 0.69) 0%, rgba(254, 254, 255, 0) 100%);
+  
+  } 
+
+.why-us p a {
+  text-decoration: none;
+  transition: opacity 0.4s;
+}
+.why-us p a:hover {
+  opacity: 0.67;
+}
+
+
+  /* SUCCESS STORIES /REVIEWS */
+
+
+  
+/*---------------------------------------
+  REVIEWS              
+-----------------------------------------*/
+.reviews-section {
+    background: var(--section-bg-color);
+  }
+  
+  .reviews-carousel .owl-item img,
+  .avatar-image {
+    border: 5px solid var(--section-bg-color);
+    border-radius: var(--border-radius-large);
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    padding-top: -10px; 
+  }
+  
+  .reviews-carousel .owl-dots .owl-dot.active span, 
+  .reviews-carousel .owl-dots .owl-dot:hover span {
+    background: var(--white-color);
+    border-color: var(--custom-btn-bg-color);
+  }
+  
+  .reviews-thumb {
+    background: var(--white-color);
+    border-radius: var(--border-radius-medium);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  
+  .reviews-body {
+    position: relative;
+    padding: 10px 10px 10px 40px;
+  }
+  
+  .reviews-info {
+    position: relative;
+    padding: -10px 10px 0px 0px;
+  }
+  
+  
+  .reviews-info strong,
+  .reviews-info small {
+    display: block;
+  }
+  
+  .reviews-info strong {
+    color: var(--dark-color);
+    line-height: normal;
+  }
+  
+  
+  .reviews-bottom small {
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-normal);
+  }
+  
+  
+
+  /*COUNTER*/
+
+   .counter {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .counter-item {
+    margin-bottom: 20px;
+    background: linear-gradient(132.24deg, #E6EDF1 2.35%, rgba(230, 237, 241, 0) 92.86%);
+    border-radius: 4px;
+  }
+
+  .counter-number {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #476172;
+  }
+
+  .counter-label {
+    font-size: 1.7rem;
+    color: #1b2933;
+  }
+
+
+
