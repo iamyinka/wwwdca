@@ -14,9 +14,53 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--primary-font-family);
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+h4 {
+  font-size: 2.5rem;
+}
+
+p,
+.nav-link,
+.nav-link .btn-info,
+input,
+select {
+  font-size: 1.8rem;
+}
+
+a,
+li,
+span,
+form label,
+form input,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+.form-control,
+.accordion-button {
+  font-size: 1.6rem;
+}
+
+address {
+  font-size: 1.5rem;
 }
 
 img {
@@ -50,6 +94,7 @@ hr {
   background-color: var(--primary-color);
   color: #fff;
   transition: all 0.3s ease-in;
+  font-size: 1.5rem;
 }
 
 .btn-custom:hover {
@@ -104,7 +149,7 @@ hr {
 }
 
 .courseIntro__desc p {
-  font-size: 1.5em;
+  font-size: 2rem;
   line-height: 1.8em;
 }
 
@@ -290,9 +335,10 @@ hr {
 
 .program-desc li {
   list-style-type: none;
-  line-height: 2rem;
+  line-height: 3rem;
   display: flex;
-  gap: 0.58rem;
+  gap: 0.85rem;
+  /* font-size: 1.8rem; */
 }
 
 .program-desc li::before {
@@ -341,6 +387,7 @@ hr {
 .footer a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .footer__links {
