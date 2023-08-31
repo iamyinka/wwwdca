@@ -338,12 +338,18 @@ hr {
   line-height: 3rem;
   display: flex;
   gap: 0.85rem;
+  transition: all 0.3s ease-in;
   /* font-size: 1.8rem; */
 }
 
 .program-desc li::before {
   content: "\2713";
   color: var(--secondary-color);
+}
+
+.program-desc li:hover {
+  transform: translateX(1.2rem);
+  color: var(--primary-color);
 }
 
 /* Footer */
