@@ -272,6 +272,34 @@ hr {
 
 /* End Contact Us */
 
+/* Work Experience Program (wpe) */
+
+.wpe-hero {
+  width: 100vw;
+  height: 60vh;
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 5% 95%;
+  background-attachment: fixed;
+}
+
+.get-experience {
+  background: linear-gradient(to bottom, rgb(0, 204, 255), rgb(255, 255, 255));
+}
+
+.program-desc li {
+  list-style-type: none;
+  line-height: 2rem;
+  display: flex;
+  gap: 0.58rem;
+}
+
+.program-desc li::before {
+  content: "\2713";
+  color: var(--secondary-color);
+}
+
 /* Footer */
 
 .footer {
