@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Courses
+{% endblock title %}
+
+  
+{% block content %}
+
+<main>
+  <section class="courses-hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-white text-center">Courses</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courseIntro pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 d-flex align-items-center justify-content-center pt-5 pb-5">
+          <div class="courseIntro__desc">
+            <p>Jumpstart your TECH career by enrolling for Digital Careers Academy’s 8-week intensive business analysis program. Learn how to identify business needs and using industry standard tools determine solutions to complex problems by translating business requirements into actionable technical specifications</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="courseIntro__img mx-auto d-flex justify-content-center">
+            <img src="{% static 'assets/images/courses2.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coursesList pt-5 pb-5">
+    <div class="container">
+        <h2>All Courses</h2>
+        <hr class="mb-5">
+        <div class="row">
+            {% if courses %}
+              {% for course in courses %}
+              <div class="col-md-4 mt-3">
+                <div class="coursesList__course">
+                    <div class="coursesList__course--thumbnail">
+                        <img src="{% static 'assets/images/courses3.png' %}" alt="">
+                    </div>
+                    <h4 class="coursesList__course--title">
+                        {{ course }}
+                    </h4>
+                    <div class="coursesList__course--desc">
+                        <p>The Practical Scrum Master training is a 8-week fast-track, intensive program that equips you with the right skills needed to thrive as an exp ... <a href="{{ course.get_absolute_url }}" class="btn-link">Read more &raquo;</a> </p>
+                        <a href="enrolment-form.html" class="btn btn-custom d-grid gap-2 btn-lg">Enrol Now</a>
+                    </div>
+                </div>
+            </div>
+
+              {% endfor %}
+            {% else %}
+            <div class="col-md-12">
+              <p>There are no courses available to show</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock content %}
