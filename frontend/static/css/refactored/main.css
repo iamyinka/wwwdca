@@ -352,6 +352,95 @@ hr {
   color: var(--primary-color);
 }
 
+/* About Us */
+
+.about-hero {
+  width: 100vw;
+  height: 60vh;
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 120%;
+  background-attachment: fixed;
+}
+
+.aboutUs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutUs__bg {
+  background: url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.coaches {
+  padding: 10rem 0;
+  margin-top: 5rem;
+}
+
+.coaches__coach {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 35rem;
+  /* border: 2px solid var(--primary-color); */
+  border-left: 2px solid var(--secondary-color-lvl3);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  gap: 5rem;
+  box-shadow: 3px 3px 2px var(--secondary-color-lvl3), 2px 2px 1px var(--primary-color), 3px 3px 2px var(--secondary-color);
+  background: linear-gradient(179deg, rgb(14, 65, 78, 0.35) -66%, rgb(255, 255, 255) 42%);
+}
+
+.coaches__coach--thumbnail img {
+  width: 100%;
+  max-width: 18rem;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.coaches__coach--desc p:last-child {
+  text-align: center;
+}
+
+.coaches__coach--desc p:last-child strong {
+  text-transform: uppercase;
+}
+
+.moreAboutUs {
+  background: linear-gradient(219deg, #010926 -66%, rgba(218, 232, 235, 1) 42%);
+}
+
+.moreAboutUs .aboutUs__bg {
+  background-image: none;
+}
+
+.moreAboutUs .row {
+  flex-direction: row-reverse;
+}
+
+.aboutUs__bg,
+.aboutUs__desc {
+  min-height: 50rem;
+  flex-basis: 50%;
+}
+
+.aboutUs__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
 /* Footer */
 
 .footer {
@@ -410,9 +499,15 @@ hr {
   .courses-hero,
   .faq-hero,
   .enrol-header,
-  .contact-hero {
+  .contact-hero,
+  .about-hero {
     background-attachment: scroll;
   }
+
+  .moreAboutUs .row {
+    flex-direction: column-reverse;
+  }
+
   .footer__social {
     flex-direction: column;
     justify-content: center;
@@ -422,5 +517,15 @@ hr {
   .footer {
     background: linear-gradient(215deg, #010926 93%, rgba(218, 232, 235, 1) 13%);
     color: #fff;
+  }
+}
+
+@media (max-width: 820px) {
+  .aboutUs {
+    flex-direction: column-reverse;
+  }
+
+  .coaches__coach {
+    margin: 7rem 0;
   }
 }
