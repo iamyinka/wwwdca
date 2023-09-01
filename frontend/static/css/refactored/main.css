@@ -93,13 +93,14 @@ hr {
 .btn-custom {
   background-color: var(--primary-color);
   color: #fff;
-  transition: all 0.3s ease-in;
   font-size: 1.5rem;
+  transition: all 0.3s ease-in;
 }
 
 .btn-custom:hover {
   background-color: #fff;
   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 /* FAQs */
@@ -439,6 +440,102 @@ hr {
   gap: 1.5rem;
   align-items: center;
   padding: 3rem 2rem;
+}
+
+/* Course Detail */
+
+.courseDetail-hero {
+  width: 100vw;
+  height: 60vh;
+  background: radial-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.55)), url("https://images.unsplash.com/photo-1631203928493-a4e4eb2b8da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 70%;
+  background-attachment: fixed;
+}
+
+.course {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(0deg, rgba(254, 254, 254, 1) 13%, rgba(218, 230, 235, 1) 59%);
+  padding: 10rem 0;
+}
+
+.course__main-bg img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.course__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  padding: 0 3rem;
+}
+
+.courseInfo__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(254, 254, 254, 1) 13%, rgba(218, 230, 235, 1) 59%);
+  padding: 2rem 0;
+  border-radius: 1.2rem;
+}
+
+.features {
+  background: #fff;
+  padding-bottom: 10rem;
+}
+
+/* Testimonials */
+
+.testimonials {
+  min-height: 450px;
+}
+
+.quote_ {
+  opacity: 0.1;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 35px;
+  background: #000;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: block;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slick-dots li button:before {
+  font-size: 1rem;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  max-width: 20rem;
 }
 
 /* Footer */
