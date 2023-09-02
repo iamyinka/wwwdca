@@ -90,17 +90,29 @@ hr {
   opacity: 1;
 }
 
-.btn-custom {
+.btn-custom,
+.btn-custom-sec {
   background-color: var(--primary-color);
   color: #fff;
   font-size: 1.5rem;
   transition: all 0.3s ease-in;
 }
 
+.btn-custom-sec {
+  background-color: #fff;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
 .btn-custom:hover {
   background-color: #fff;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.btn-custom-sec:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 /* FAQs */
@@ -733,6 +745,67 @@ figure {
   font-size: 2rem;
   text-align: center;
   /* color: var(--secondary-color-lvl3); */
+}
+
+.ctas {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+/* Stats / Counter */
+
+.stats {
+  padding: 10rem 0;
+}
+
+.counter-box .icon {
+  font-size: 6rem;
+  margin-bottom: 0.85rem;
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center;
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #d2d2d2;
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px;
+}
+
+.counter-box.colored {
+  background: var(--primary-color);
+}
+
+.counter-box.colored .icon {
+  color: #fff;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff;
 }
 
 @keyframes slideUp {
