@@ -688,7 +688,6 @@ figure {
   max-height: 400px;
   overflow: hidden;
   /* background-color: teal; */
-  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.85));
 }
 
 .explore__courses img {
@@ -721,7 +720,8 @@ figure {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
+  background: linear-gradient(to top, var(--secondary-color) 100%, rgba(218, 232, 235, 1) 13%);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -732,7 +732,7 @@ figure {
 .explore__courses--desc .title {
   font-size: 2rem;
   text-align: center;
-  color: var(--secondary-color-lvl3);
+  /* color: var(--secondary-color-lvl3); */
 }
 
 @keyframes slideUp {
