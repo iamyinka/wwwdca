@@ -699,6 +699,7 @@ figure {
   position: relative;
   max-height: 400px;
   overflow: hidden;
+  background: linear-gradient(to bottom, var(--secondary-color-lvl3) 100%, rgba(218, 232, 235, 1) 13%);
   /* background-color: teal; */
 }
 
