@@ -13,7 +13,6 @@ def about(request):
 
 def courses(request):
     courses = Course.objects.all()
-    print(courses)
     context = {
         'courses': courses
     }
